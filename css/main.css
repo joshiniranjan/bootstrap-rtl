@@ -1,0 +1,4648 @@
+@import url("https://fonts.googleapis.com/css?family=Biryani:200,300,400,600,700,800,900|Lora:400,400i,700,700i");/*=========================================
+1. styles for header of the page
+2. Styles for logo-wrap
+3. styles for bottom block
+4. Styles for  main navigation 
+5. Styles for fixed header
+6. Styles for main section
+7. Styles for banner-wrap
+8. Styles for events-block
+9. Styles for gallery-wrap
+10. Styles for sales-wrap
+11. Styles for about-block
+12. Styles for about-section
+13. Styles for shopping section
+14. Styles for product-block
+15. Styles for faq section
+16. Styles for form-holder
+17. Styles for detail-section
+18. Styles for description-block
+19. Styles for service-section
+20. Styles for service-detail
+21. Styles for footer
+=====================================*/
+
+@font-face {
+	font-family: "icomoon";
+	src: url("../fonts/icomoon.eot?dxfssa");
+	src: url("../fonts/icomoon.eot?dxfssa#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?dxfssa") format("truetype"), url("../fonts/icomoon.woff?dxfssa") format("woff"), url("../fonts/icomoon.svg?dxfssa#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icomoon" !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1; /* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-help:before {
+	content: "\e90b";
+}
+
+.icon-play:before {
+	content: "\e90a";
+}
+
+.icon-cross:before {
+	content: "\e909";
+}
+
+.icon-mail:before {
+	content: "\e900";
+}
+
+.icon-cart:before {
+	content: "\e903";
+}
+
+.icon-twitter:before {
+	content: "\e905";
+}
+
+.icon-instagram:before {
+	content: "\e906";
+}
+
+.icon-gplus:before {
+	content: "\e908";
+}
+
+.icon-phone:before {
+	content: "\e907";
+}
+
+.icon-pin:before {
+	content: "\e90f";
+}
+
+.icon-right:before {
+	content: "\e901";
+}
+
+.icon-left:before {
+	content: "\e902";
+}
+
+.icon-facebook:before {
+	content: "\ea91";
+}
+
+.icon-search:before {
+	content: "\e904";
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Gothic";
+	src: url("../fonts/AvantGarde-BookOblique.eot");
+	src: url("../fonts/AvantGarde-BookOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/AvantGarde-BookOblique.woff2") format("woff2"), url("../fonts/AvantGarde-BookOblique.woff") format("woff"), url("../fonts/AvantGarde-BookOblique.ttf") format("truetype"), url("../fonts/AvantGarde-BookOblique.svg#AvantGarde-BookOblique") format("svg");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Gothic";
+	src: url("../fonts/AvantGarde-Book.eot");
+	src: url("../fonts/AvantGarde-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/AvantGarde-Book.woff2") format("woff2"), url("../fonts/AvantGarde-Book.woff") format("woff"), url("../fonts/AvantGarde-Book.ttf") format("truetype"), url("../fonts/AvantGarde-Book.svg#AvantGarde-Book") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Gothic Demi";
+	src: url("../fonts/AvantGarde-Demi.eot");
+	src: url("../fonts/AvantGarde-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/AvantGarde-Demi.woff2") format("woff2"), url("../fonts/AvantGarde-Demi.woff") format("woff"), url("../fonts/AvantGarde-Demi.ttf") format("truetype"), url("../fonts/AvantGarde-Demi.svg#AvantGarde-Demi") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Gothic Demi";
+	src: url("../fonts/AvantGarde-DemiOblique.eot");
+	src: url("../fonts/AvantGarde-DemiOblique.eot?#iefix") format("embedded-opentype"), url("../fonts/AvantGarde-DemiOblique.woff2") format("woff2"), url("../fonts/AvantGarde-DemiOblique.woff") format("woff"), url("../fonts/AvantGarde-DemiOblique.ttf") format("truetype"), url("../fonts/AvantGarde-DemiOblique.svg#AvantGarde-DemiOblique") format("svg");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Adobe Garamond Pro";
+	src: url("../fonts/AGaramondPro-Semibold.eot");
+	src: url("../fonts/AGaramondPro-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/AGaramondPro-Semibold.woff2") format("woff2"), url("../fonts/AGaramondPro-Semibold.woff") format("woff"), url("../fonts/AGaramondPro-Semibold.ttf") format("truetype"), url("../fonts/AGaramondPro-Semibold.svg#AGaramondPro-Semibold") format("svg");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Pro XLt";
+	src: url("../fonts/ITCAvantGardePro-XLt.eot");
+	src: url("../fonts/ITCAvantGardePro-XLt.eot?#iefix") format("embedded-opentype"), url("../fonts/ITCAvantGardePro-XLt.woff2") format("woff2"), url("../fonts/ITCAvantGardePro-XLt.woff") format("woff"), url("../fonts/ITCAvantGardePro-XLt.ttf") format("truetype"), url("../fonts/ITCAvantGardePro-XLt.svg#ITCAvantGardePro-XLt") format("svg");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Pro XLt";
+	src: url("../fonts/ITCAvantGardePro-XLtObl.eot");
+	src: url("../fonts/ITCAvantGardePro-XLtObl.eot?#iefix") format("embedded-opentype"), url("../fonts/ITCAvantGardePro-XLtObl.woff2") format("woff2"), url("../fonts/ITCAvantGardePro-XLtObl.woff") format("woff"), url("../fonts/ITCAvantGardePro-XLtObl.ttf") format("truetype"), url("../fonts/ITCAvantGardePro-XLtObl.svg#ITCAvantGardePro-XLtObl") format("svg");
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Adobe Garamond Pro";
+	src: url("../fonts/AGaramondPro-SemiboldItalic.eot");
+	src: url("../fonts/AGaramondPro-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AGaramondPro-SemiboldItalic.woff2") format("woff2"), url("../fonts/AGaramondPro-SemiboldItalic.woff") format("woff"), url("../fonts/AGaramondPro-SemiboldItalic.ttf") format("truetype"), url("../fonts/AGaramondPro-SemiboldItalic.svg#AGaramondPro-SemiboldItalic") format("svg");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Adobe Garamond Pro";
+	src: url("../fonts/AGaramondPro-Regular.eot");
+	src: url("../fonts/AGaramondPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AGaramondPro-Regular.woff2") format("woff2"), url("../fonts/AGaramondPro-Regular.woff") format("woff"), url("../fonts/AGaramondPro-Regular.ttf") format("truetype"), url("../fonts/AGaramondPro-Regular.svg#AGaramondPro-Regular") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Pro Md";
+	src: url("../fonts/ITCAvantGardePro-Bold.eot");
+	src: url("../fonts/ITCAvantGardePro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ITCAvantGardePro-Bold.woff2") format("woff2"), url("../fonts/ITCAvantGardePro-Bold.woff") format("woff"), url("../fonts/ITCAvantGardePro-Bold.ttf") format("truetype"), url("../fonts/ITCAvantGardePro-Bold.svg#ITCAvantGardePro-Bold") format("svg");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Pro Md";
+	src: url("../fonts/ITCAvantGardePro-Md.eot");
+	src: url("../fonts/ITCAvantGardePro-Md.eot?#iefix") format("embedded-opentype"), url("../fonts/ITCAvantGardePro-Md.woff2") format("woff2"), url("../fonts/ITCAvantGardePro-Md.woff") format("woff"), url("../fonts/ITCAvantGardePro-Md.ttf") format("truetype"), url("../fonts/ITCAvantGardePro-Md.svg#ITCAvantGardePro-Md") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Adobe Garamond Pro";
+	src: url("../fonts/AGaramondPro-BoldItalic.eot");
+	src: url("../fonts/AGaramondPro-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/AGaramondPro-BoldItalic.woff2") format("woff2"), url("../fonts/AGaramondPro-BoldItalic.woff") format("woff"), url("../fonts/AGaramondPro-BoldItalic.ttf") format("truetype"), url("../fonts/AGaramondPro-BoldItalic.svg#AGaramondPro-BoldItalic") format("svg");
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Pro Md";
+	src: url("../fonts/ITCAvantGardePro-MdObl.eot");
+	src: url("../fonts/ITCAvantGardePro-MdObl.eot?#iefix") format("embedded-opentype"), url("../fonts/ITCAvantGardePro-MdObl.woff2") format("woff2"), url("../fonts/ITCAvantGardePro-MdObl.woff") format("woff"), url("../fonts/ITCAvantGardePro-MdObl.ttf") format("truetype"), url("../fonts/ITCAvantGardePro-MdObl.svg#ITCAvantGardePro-MdObl") format("svg");
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Adobe Garamond Pro";
+	src: url("../fonts/AGaramondPro-Bold.eot");
+	src: url("../fonts/AGaramondPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/AGaramondPro-Bold.woff2") format("woff2"), url("../fonts/AGaramondPro-Bold.woff") format("woff"), url("../fonts/AGaramondPro-Bold.ttf") format("truetype"), url("../fonts/AGaramondPro-Bold.svg#AGaramondPro-Bold") format("svg");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Pro Bk";
+	src: url("../fonts/ITCAvantGardePro-Demi.eot");
+	src: url("../fonts/ITCAvantGardePro-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/ITCAvantGardePro-Demi.woff2") format("woff2"), url("../fonts/ITCAvantGardePro-Demi.woff") format("woff"), url("../fonts/ITCAvantGardePro-Demi.ttf") format("truetype"), url("../fonts/ITCAvantGardePro-Demi.svg#ITCAvantGardePro-Demi") format("svg");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Pro Bk";
+	src: url("../fonts/ITCAvantGardePro-DemiObl.eot");
+	src: url("../fonts/ITCAvantGardePro-DemiObl.eot?#iefix") format("embedded-opentype"), url("../fonts/ITCAvantGardePro-DemiObl.woff2") format("woff2"), url("../fonts/ITCAvantGardePro-DemiObl.woff") format("woff"), url("../fonts/ITCAvantGardePro-DemiObl.ttf") format("truetype"), url("../fonts/ITCAvantGardePro-DemiObl.svg#ITCAvantGardePro-DemiObl") format("svg");
+	font-weight: 600;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Pro Bk";
+	src: url("../fonts/ITCAvantGardePro-Bk.eot");
+	src: url("../fonts/ITCAvantGardePro-Bk.eot?#iefix") format("embedded-opentype"), url("../fonts/ITCAvantGardePro-Bk.woff2") format("woff2"), url("../fonts/ITCAvantGardePro-Bk.woff") format("woff"), url("../fonts/ITCAvantGardePro-Bk.ttf") format("truetype"), url("../fonts/ITCAvantGardePro-Bk.svg#ITCAvantGardePro-Bk") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Pro Bk";
+	src: url("../fonts/ITCAvantGardePro-BkObl.eot");
+	src: url("../fonts/ITCAvantGardePro-BkObl.eot?#iefix") format("embedded-opentype"), url("../fonts/ITCAvantGardePro-BkObl.woff2") format("woff2"), url("../fonts/ITCAvantGardePro-BkObl.woff") format("woff"), url("../fonts/ITCAvantGardePro-BkObl.ttf") format("truetype"), url("../fonts/ITCAvantGardePro-BkObl.svg#ITCAvantGardePro-BkObl") format("svg");
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Adobe Garamond Pro";
+	src: url("../fonts/AGaramondPro-Italic.eot");
+	src: url("../fonts/AGaramondPro-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/AGaramondPro-Italic.woff2") format("woff2"), url("../fonts/AGaramondPro-Italic.woff") format("woff"), url("../fonts/AGaramondPro-Italic.ttf") format("truetype"), url("../fonts/AGaramondPro-Italic.svg#AGaramondPro-Italic") format("svg");
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "ITC Avant Garde Pro Md";
+	src: url("../fonts/ITCAvantGardePro-BoldObl.eot");
+	src: url("../fonts/ITCAvantGardePro-BoldObl.eot?#iefix") format("embedded-opentype"), url("../fonts/ITCAvantGardePro-BoldObl.woff2") format("woff2"), url("../fonts/ITCAvantGardePro-BoldObl.woff") format("woff"), url("../fonts/ITCAvantGardePro-BoldObl.ttf") format("truetype"), url("../fonts/ITCAvantGardePro-BoldObl.svg#ITCAvantGardePro-BoldObl") format("svg");
+	font-weight: bold;
+	font-style: italic;
+}
+
+.product-block .filter-wrap .filter-list,
+.product-block .pagination,
+.product-block .products-list,
+.faq-section .faq-list,
+.detail-section .checkbox-list,
+.description-block .panel-list,
+.description-block .size-list,
+.description-block .giftinfo-block .gift-list,
+.contact-section .contact-list,
+#header .contact-list,
+.login-wrap .log-list,
+.navbar .nav,
+.links-block .extra-links,
+.follow-hold .social-networks {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.ellipsis {
+	white-space: nowrap; /* 1 */
+	text-overflow: ellipsis; /* 2 */
+	overflow: hidden;
+}
+
+body {
+	min-width: 320px;
+}
+
+.rtl {
+	direction: rtl;
+}
+
+#wrapper {
+	overflow: hidden;
+}
+
+/*---------------------------
+6. Styles for main section
+---------------------------*/
+
+#main {
+	padding: 20px 0 15px;
+}
+
+/*---------------------------
+7. Styles for banner-wrap
+---------------------------*/
+
+.banner-wrap .image-holder {
+	border-radius: 10px;
+	overflow: hidden;
+	height: 360px;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: 0 0 25px;
+}
+
+.banner-wrap .text-wrap {
+	font: 400 16px/1.3 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	max-width: 540px;
+	padding: 15px 10px;
+	margin: 0 auto;
+	color: #514d4e;
+}
+
+.banner-wrap .title-text {
+	font: 400 18px/1.3 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	color: #504d50;
+	display: block;
+	margin: 0 0 15px;
+}
+
+.banner-wrap .btn {
+	width: 185px;
+	margin: 0 auto;
+	padding: 12px 15px 6px;
+}
+
+.banner-wrap p {
+	margin: 0 0 15px;
+}
+
+/*---------------------------
+8. Styles for events-block
+---------------------------*/
+
+.events-block .container {
+	border-bottom: 1px solid #ebebeb;
+}
+
+.events-block .content-hold {
+	background: #fdf6fc;
+	display: table;
+	table-layout: fixed;
+	padding: 5px 10px 0;
+	width: 100%;
+	margin: 0 0 30px;
+	border: 1px solid #e6dbe4;
+}
+
+.events-block .content-hold .image-wrap {
+	width: 100px;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.events-block .content-hold .text-wrap {
+	display: table-cell;
+	vertical-align: middle;
+	padding: 0 5px 0 0;
+}
+
+.events-block .content-hold.yellow {
+	background: #fdf6eb;
+	border: 1px solid #f2dec6;
+}
+
+.events-block .content-hold.blue {
+	border: 1px solid #c7e5eb;
+	background: #f1fbfd;
+}
+
+.events-block .heading {
+	font: 900 16px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #4d2377;
+	display: block;
+	margin: 0 0 5px;
+}
+
+.events-block .info {
+	font: 400 16px/1 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	display: block;
+	margin: 0 0 7px;
+	color: #7e797d;
+}
+
+.events-block .btn {
+	width: 160px;
+	padding: 12px 10px 7px;
+}
+
+/*---------------------------
+9. Styles for gallery-wrap
+---------------------------*/
+
+.gallery-wrap {
+	padding: 25px 0;
+}
+
+.gallery-wrap .container {
+	border-bottom: 1px solid #ebebeb;
+}
+
+.gallery-wrap .image-wrap {
+	margin: 0 0 9px;
+	border-radius: 10px;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+.gallery-wrap .image-wrap:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	background: rgba(0, 0, 0, .3);
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+}
+
+.gallery-wrap .slick-hold {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.gallery-wrap .name {
+	display: block;
+	font: 400 17px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #6c538d;
+	margin: 0 0 10px;
+	text-align: center;
+}
+
+.gallery-wrap .price {
+	display: block;
+	font: 700 20px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #8f71b7;
+	text-align: center;
+}
+
+.gallery-wrap .slick-wrap {
+	position: relative;
+	margin: 0 -12px 25px;
+}
+
+.gallery-wrap .slick-wrap .slick-list {
+	overflow: hidden;
+}
+
+.gallery-wrap .content-wrap {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+.gallery-wrap .content-wrap:hover .image-wrap:before {
+	visibility: visible;
+	opacity: 1;
+}
+
+.gallery-wrap .info-block {
+	font-size: 0;
+	line-height: 0;
+	border: 1px solid #d5ebd8;
+	background: #fdf6fd;
+	overflow: hidden;
+	margin: 0 0 25px;
+}
+
+.gallery-wrap .info-block .img-wrap {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 0;
+	height: 108px;
+}
+
+.gallery-wrap .info-block .text-wrap {
+	font: 400 16px/1.3 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	color: #928d8a;
+	padding: 15px;
+}
+
+.gallery-wrap .info-block .text-wrap p {
+	margin: 0;
+}
+
+.gallery-wrap .heading {
+	font: 900 18px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #4c2576;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 0 10px;
+}
+
+.gallery-wrap .sale-price {
+	font: 700 28px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-align: center;
+	display: block;
+	color: #f47bb0;
+}
+
+.gallery-wrap .sale-price .old {
+	font: 400 18px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #79817a;
+}
+
+/*---------------------------
+10. Styles for sales-wrap
+---------------------------*/
+
+.sales-wrap {
+	padding: 25px 0;
+}
+
+.sales-wrap .container {
+	border-bottom: 1px solid #ebebeb;
+}
+
+.sales-wrap .image-wrap {
+	margin: 0 0 9px;
+	border-radius: 10px;
+	text-align: center;
+	display: block;
+	overflow: hidden;
+	position: relative;
+}
+
+.sales-wrap .image-wrap:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	background: rgba(0, 0, 0, .3);
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
+}
+
+.sales-wrap .name {
+	display: block;
+	font: 400 17px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #4e2478;
+	margin: 0 0 11px;
+	text-align: center;
+}
+
+.sales-wrap .price {
+	display: block;
+	font: 400 20px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #8f70b4;
+	text-align: center;
+}
+
+.sales-wrap .slick-wrap {
+	position: relative;
+	margin: 0 -12px 25px;
+}
+
+.sales-wrap .slick-wrap .slick-list {
+	overflow: hidden;
+}
+
+.sales-wrap .content-wrap {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 10px;
+	text-decoration: none;
+}
+
+.sales-wrap .content-wrap:hover .image-wrap:before {
+	opacity: 1;
+	visibility: visible;
+}
+
+.sales-wrap .info-block {
+	font-size: 0;
+	line-height: 0;
+	border: 1px solid #e6dbe4;
+	background: #fdf6fd;
+	overflow: hidden;
+	margin: 0 0 25px;
+}
+
+.sales-wrap .info-block .img-wrap {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 100% 0;
+	height: 108px;
+}
+
+.sales-wrap .info-block .text {
+	display: block;
+}
+
+.sales-wrap .info-block .text-wrap {
+	font: 400 16px/1.3 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	color: #928d8a;
+	padding: 15px;
+}
+
+.sales-wrap .info-block .text-wrap p {
+	margin: 0;
+}
+
+.sales-wrap .heading {
+	font: 900 26px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #ed3d52;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 0 10px;
+}
+
+.sales-wrap .title-text {
+	font: 900 20px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #50247b;
+	text-transform: uppercase;
+	display: block;
+}
+
+.sales-wrap .sale-price {
+	font: 400 28px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-align: center;
+	display: block;
+	color: #8c72b3;
+}
+
+.sales-wrap .sale-price .old {
+	font: 400 18px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #797f7b;
+}
+
+.sales-wrap .btn {
+	width: 158px;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 12px 7px 6px;
+}
+
+.sales-wrap .slick-hold {
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}
+
+/*---------------------------
+11. Styles for about-block
+---------------------------*/
+
+.about-block {
+	font: 400 16px/2.25 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	color: #504d50;
+	padding: 30px 0;
+}
+
+.about-block p {
+	margin: 0 0 19px;
+}
+
+.about-block .btn {
+	width: 158px;
+	padding: 12px 7px 8px;
+	margin: 0 0 25px;
+}
+
+.about-block h2 {
+	margin: 0 0 15px;
+}
+
+/*-----------------------
+style for h1
+------------------------*/
+
+h1 {
+	font: 900 25px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #3d3147;
+	margin: 0 0 15px;
+}
+
+/*-----------------------
+style for h2
+-----------------------*/
+
+h2 {
+	font: 900 20px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: capitalize;
+	color: #3c3346;
+	margin: 0 0 22px;
+}
+
+/*----------------------
+Styles for buttons
+-----------------------*/
+
+.btn {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	position: relative;
+	border-radius: 4px;
+	font: 400 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: capitalize;
+	overflow: hidden;
+	z-index: 1;
+	border: none;
+}
+
+.btn.btn-default {
+	color: #fff;
+	background: #8f72b4;
+}
+
+.btn.btn-default:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	background: #4e2478;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+	z-index: -1;
+}
+
+.btn.btn-default:hover:before {
+	left: 0;
+	right: 0;
+}
+
+.btn.btn-success {
+	background: none;
+	color: #4e2478;
+	border: 2px solid #f5bb00;
+	-webkit-transition: color .5s ease;
+	transition: color .5s ease;
+}
+
+.btn.btn-success:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	background: #f5bb00;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+	z-index: -1;
+}
+
+.btn.btn-success:hover {
+	color: #fff;
+}
+
+.btn.btn-success:hover:before {
+	left: 0;
+	right: 0;
+}
+
+.slick-prev,
+.slick-next {
+	border: none;
+	background: none;
+	position: absolute;
+	top: 50%;
+	display: block;
+	color: #b5b5b5;
+	font-size: 43px;
+	-webkit-transition: color .5s ease;
+	transition: color .5s ease;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+	color: #4e2478;
+}
+
+.slick-prev {
+	left: -61px;
+}
+
+.slick-next {
+	right: -61px;
+}
+
+/*---------------------------
+12. Styles for about-section
+---------------------------*/
+
+.about-section {
+	padding: 25px 0 0;
+}
+
+.about-section .text-block {
+	font: 400 16px/2.25 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	color: #504d50;
+	padding: 0 0 20px;
+}
+
+.about-section h2 {
+	margin: 0 0 8px;
+}
+
+.about-section h3 {
+	text-transform: uppercase;
+	font: 900 20px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0 0 10px;
+	color: #3c3c3c;
+}
+
+.about-section .info-section {
+	border-top: 1px solid #ebebeb;
+	padding: 25px 0 15px;
+}
+
+.about-section .text-wrap {
+	font: 400 14px/1.8 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	overflow: hidden;
+	margin: 0 0 25px;
+}
+
+.about-section .text-wrap p {
+	margin: 0 0 15px;
+}
+
+.about-section .image-wrap {
+	margin: 0 0 22px;
+	border-radius: 10px;
+}
+
+/*----------------------------------
+13. Styles for shopping section
+----------------------------------*/
+
+.shopping-section {
+	padding: 32px 0;
+}
+
+.shopping-section h2 {
+	margin: 0 0 15px;
+}
+
+.shopping-section .detail-wrap {
+	display: table;
+	position: relative;
+	width: 100%;
+}
+
+.shopping-section .detail-wrap .icon-cross {
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	top: -4px;
+	left: -4px;
+	text-decoration: none;
+	color: #3c3c3c;
+	-webkit-transition: opacity .5s ease;
+	transition: opacity .5s ease;
+	font-size: 22px;
+}
+
+.shopping-section .detail-wrap .icon-cross:hover {
+	opacity: .5;
+}
+
+.rtl .shopping-section .detail-wrap .icon-cross {
+	left: auto;
+	right: -4px;
+}
+
+.shopping-section .detail-wrap .image-wrap {
+	display: block;
+	padding: 0 10px 0 20px;
+	margin: 0 auto 15px;
+	width: 100px;
+}
+
+.rtl .shopping-section .detail-wrap .image-wrap {
+	padding: 0 20px 0 10px;
+}
+
+.shopping-section .detail-wrap .text-wrap {
+	display: block;
+}
+
+.shopping-section .detail-wrap .title {
+	display: block;
+	font: 400 15px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #3c3c3c;
+}
+
+.shopping-section .detail-wrap .sub-title {
+	font: 300 13px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #585257;
+	display: block;
+}
+
+.shopping-section table {
+	margin: 0 0 25px;
+}
+
+.shopping-section table th {
+	text-transform: uppercase;
+	font: 600 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #3c3c3c;
+	padding: 10px 0;
+}
+
+.shopping-section table th:nth-child(2) {
+	width: 12.5%;
+}
+
+.shopping-section table th:nth-child(3) {
+	width: 34%;
+}
+
+.shopping-section table th:nth-child(4) {
+	width: 11%;
+}
+
+.shopping-section input {
+	width: 70px;
+	text-align: center;
+	color: #5c5959;
+}
+
+.shopping-section .jcf-number {
+	overflow: hidden;
+	border-radius: 4px;
+	position: relative;
+}
+
+.shopping-section .jcf-number .jcf-real-element {
+	padding: 2px 24px 0;
+	line-height: 10px;
+	font-size: 16px;
+	border: 1px solid #dedbdb;
+	text-align: center;
+}
+
+.shopping-section .jcf-btn-dec {
+	left: 0 !important;
+	height: 100% !important;
+	bottom: 0 !important;
+	right: auto !important;
+	border: 1px solid #dedbdb !important;
+	background: #f4f4f4 !important;
+}
+
+.shopping-section .jcf-btn-dec:before {
+	content: "-" !important;
+	margin: -17px 0 0 -6px !important;
+	border: none !important;
+	font-size: 20px !important;
+	color: #979396 !important;
+}
+
+.rtl .shopping-section .jcf-btn-dec {
+	right: 0 !important;
+	left: auto;
+}
+
+.rtl .shopping-section .jcf-btn-dec:before {
+	padding: 0 12px;
+}
+
+.shopping-section .jcf-btn-inc {
+	height: 100% !important;
+	top: 0 !important;
+	background: #f4f4f4 !important;
+	border: 1px solid #dedbdb !important;
+}
+
+.shopping-section .jcf-btn-inc:before {
+	content: "+" !important;
+	font-size: 20px !important;
+	color: #979396 !important;
+	border: none !important;
+	margin: -17px 0 0 -6px !important;
+}
+
+.rtl .shopping-section .jcf-btn-inc {
+	right: auto;
+	left: 0;
+}
+
+.rtl .shopping-section .jcf-btn-inc:before {
+	padding: 0 12px;
+}
+
+.shopping-section .price-total {
+	font: 700 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.shopping-section dl {
+	margin: 0;
+	font: 300 14px/1.5 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.shopping-section dl dt {
+	float: left;
+	font-weight: 300;
+}
+
+.shopping-section button {
+	background: #4e2478;
+	color: #fff;
+	font: 700 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	border: none;
+	width: 212px;
+	margin: 0  auto;
+	display: block;
+	padding: 16px 10px 8px;
+	border-radius: 4px;
+	-webkit-transition: background .5s ease;
+	transition: background .5s ease;
+}
+
+.shopping-section button:hover {
+	background: #28123d;
+}
+
+/*---------------------------
+14. Styles for product-block
+---------------------------*/
+
+.product-block {
+	padding: 22px 0;
+}
+
+.product-block .filter-wrap {
+	font-size: 0;
+	line-height: 0;
+	margin: 0 -15px;
+	padding: 0 0 20px;
+	border-bottom: 1px solid #ebebeb;
+}
+
+.product-block .filter-wrap .filter-list {
+	font-size: 0;
+	line-height: 0;
+	margin: 0 -7px;
+	padding: 0 15px;
+}
+
+.product-block .filter-wrap .filter-list li {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	padding: 0 7px;
+}
+
+.product-block .filter-wrap .clear-wrap {
+	padding: 15px;
+	font: 300 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #7b7878;
+	text-align: center;
+}
+
+.product-block .filter-wrap .clear-wrap .clear-btn {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: #7b7878;
+	padding: 0 0 0 15px;
+	position: relative;
+	-webkit-transition: color .5s linear;
+	transition: color .5s linear;
+}
+
+.product-block .filter-wrap .clear-wrap .clear-btn:before {
+	content: "\e909";
+	position: absolute;
+	top: -8px;
+	left: -8px;
+	font-size: 22px;
+	font-family: icomoon;
+}
+
+.product-block .filter-wrap .clear-wrap .clear-btn:hover {
+	color: #4e2478;
+}
+
+.product-block .jcf-select {
+	font: 300 12px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	height: 44px;
+	width: 100%;
+	padding-left: 10px;
+	border-radius: 3px;
+	border-color: #dedbdb;
+	min-width: 0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .05) inset;
+}
+
+.product-block .jcf-select .jcf-select-text {
+	font: 300 12px/44px "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.product-block .jcf-select .jcf-select-opener {
+	background: none;
+}
+
+.product-block .jcf-select .jcf-select-opener:after {
+	content: "";
+	position: absolute;
+	top: 17px;
+	left: 7px;
+	width: 0;
+	height: 0;
+	border: 0 solid transparent;
+	border-left-width: 6px;
+	border-right-width: 6px;
+	border-top: 7px solid #988f9f;
+}
+
+.product-block .sort-list {
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+	padding: 25px 0;
+}
+
+.product-block .sort-list .jcf-select {
+	height: 40px;
+}
+
+.product-block .sort-list .right-block {
+	font-size: 0;
+	line-height: 0;
+}
+
+.product-block .sort-list .right-block .wrap {
+	width: 72px;
+}
+
+.product-block .sort-list .text {
+	display: inline-block;
+	vertical-align: middle;
+	font: 600 12px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #444141;
+	padding: 0 5px;
+	margin: 0 0 7px;
+}
+
+.product-block .sort-list .wrap {
+	display: inline-block;
+	vertical-align: middle;
+	width: 142px;
+}
+
+.product-block .pagination-wrap {
+	font-size: 0;
+	line-height: 0;
+}
+
+.product-block .pagination-wrap .wrap {
+	width: 72px;
+}
+
+.product-block .pagination {
+	width: 316px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 -5px;
+}
+
+.product-block .pagination li {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 5px;
+}
+
+.product-block .pagination li a {
+	width: 35px;
+	height: 35px;
+	white-space: nowrap;
+	text-align: center;
+	border-radius: 3px;
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 !important;
+	vertical-align: top;
+	border: 1px solid #dbd9e0;
+	color: #4e2478;
+	font: 400 16px/35px Lato, "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	-webkit-transition: color .5s , border .5s ease;
+	transition: color .5s , border .5s ease;
+}
+
+.product-block .pagination li a:after {
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	width: 0;
+	min-height: 100%;
+}
+
+.product-block .pagination li a > * {
+	white-space: normal;
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 99%;
+}
+
+.product-block .pagination li a:hover {
+	color: #3f3c3d;
+	border: 1px solid #3f3c3d;
+	background: none;
+}
+
+.product-block .pagination li.active a {
+	color: #3f3c3d;
+	background: none;
+	border: 1px solid #3f3c3d;
+}
+
+.product-block .pagination li.disabled a {
+	color: #988f9f;
+	pointer-events: none;
+}
+
+.product-block .products-list {
+	font-size: 0;
+	line-height: 0;
+	margin: 0 -12px;
+}
+
+.product-block .products-list .img-wrap {
+	width: 280px;
+	height: 280px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	background-position: 50% 50%;
+	position: relative;
+	z-index: 2;
+	border-radius: 10px;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin: 0 auto 10px;
+	cursor: pointer;
+}
+
+.product-block .products-list .img-wrap:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .82);
+	z-index: -1;
+	opacity: 0;
+	-webkit-transition: opacity .5s , visibility .5s linear;
+	transition: opacity .5s , visibility .5s linear;
+	visibility: hidden;
+}
+
+.product-block .products-list .img-wrap:hover:before {
+	opacity: 1;
+	visibility: visible;
+}
+
+.product-block .products-list .img-wrap:hover .text-hold {
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	visibility: visible;
+}
+
+.product-block .products-list .text-hold {
+	font: 400 15px/1.8 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	text-align: center;
+	padding: 15px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	transform: scale(1.2);
+	color: #fff;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.product-block .products-list .price-wrap {
+	font: 400 15px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-align: center;
+}
+
+.product-block .products-list .price-wrap .title-text {
+	display: block;
+	margin: 0 0 10px;
+	color: #3d3b3e;
+}
+
+.product-block .products-list .price-wrap .price {
+	color: #422e23;
+	font: 400 20px/1.3 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.product-block .btn-default {
+	background: #4e2478;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	width: 158px;
+	text-align: center;
+	margin: 0 auto;
+	padding: 12px 7px 6px;
+	font: 400 16px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	border-radius: 25px;
+	-webkit-transition: background .5s ease;
+	transition: background .5s ease;
+}
+
+.product-block .btn-default:hover {
+	background: #7436b3;
+}
+
+.product-block .info-hold {
+	margin: 0 0 30px;
+}
+
+/*---------------------------
+15. Styles for faq section
+---------------------------*/
+
+.faq-section {
+	padding: 22px 0;
+}
+
+.faq-section h2 {
+	margin: 0 0 5px;
+}
+
+.faq-section .heading-text {
+	font: 600 18px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	display: block;
+	color: #3c3c3c;
+	margin: 0 0 6px;
+}
+
+.faq-section p {
+	margin: 0;
+}
+
+.faq-section .faq-list li {
+	padding: 25px 10px 25px 40px;
+	border-bottom: 1px solid #ebebeb;
+	font: 400 13px/1.7 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	position: relative;
+}
+
+.faq-section .faq-list li:after {
+	content: "\e90b";
+	position: absolute;
+	top: 9px;
+	left: 5px;
+	font-family: icomoon;
+	font-size: 30px;
+	color: #4e2478;
+}
+
+.rtl .faq-section .faq-list li:after {
+	left: auto;
+	right: 5px;
+}
+
+.faq-section .faq-list li:last-child {
+	border-bottom: none;
+}
+
+/*---------------------------
+16. Styles for form-holder
+---------------------------*/
+
+.form-holder {
+	padding: 25px 0;
+}
+
+.form-holder h2 {
+	font: 400 30px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.form-holder .register-form,
+.form-holder .login-form {
+	margin: 0 0 35px;
+}
+
+.form-holder .btn-default {
+	width: 132px;
+	padding: 12px 8px 8px;
+}
+
+.form-holder .form-control {
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, .05);
+	border-radius: 3px;
+	color: #aca6a8;
+	font-size: 16px;
+	border: 1px solid #dedada;
+}
+
+.form-holder .form-control::-webkit-input-placeholder {
+	color: #aca6a8;
+}
+
+.form-holder .form-control::-moz-placeholder {
+	opacity: 1;
+	color: #aca6a8;
+}
+
+.form-holder .form-control:-moz-placeholder {
+	color: #aca6a8;
+}
+
+.form-holder .form-control:-ms-input-placeholder {
+	color: #aca6a8;
+}
+
+.form-holder .form-control.placeholder {
+	color: #aca6a8;
+}
+
+.form-holder .btn-wrap {
+	position: relative;
+}
+
+.form-holder .btn-wrap .forgot-link {
+	position: absolute;
+	top: -5px;
+	right: 0;
+	display: inline-block;
+	vertical-align: top;
+	color: #4e2478;
+	font-size: 14px;
+	-webkit-transition: color .5s ease;
+	transition: color .5s ease;
+}
+
+.form-holder .btn-wrap .forgot-link:hover {
+	text-decoration: none;
+	color: #28123d;
+}
+
+.form-holder label {
+	font: 400 17px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0;
+}
+
+.form-holder .form-group {
+	margin: 0 0 35px;
+}
+
+.form-holder .form-control {
+	height: 47px;
+}
+
+/*---------------------------
+17. Styles for detail-section
+---------------------------*/
+
+.detail-section {
+	padding: 30px 0;
+}
+
+.detail-section .heading-text {
+	font: 700 22px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 0 10px;
+}
+
+.detail-section table {
+	width: 260px;
+	margin: 0 auto;
+}
+
+.detail-section table thead td {
+	padding: 15px 0;
+	font: 300 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.detail-section table td {
+	font: 300 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	width: calc(100% - 47px);
+	padding: 11px 0;
+}
+
+.detail-section table td.price {
+	font: 700 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	width: 80px;
+	text-align: right;
+}
+
+.detail-section .content-wrap {
+	padding: 30px 0;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.detail-section .content-wrap:last-child {
+	border: none;
+}
+
+.detail-section .image-wrap {
+	width: 261px;
+	height: 291px;
+	margin: 0 auto 15px;
+}
+
+.detail-section .form-group {
+	margin: 0 0 25px;
+}
+
+.detail-section .checkbox-list {
+	text-align: center;
+}
+
+.detail-section .checkbox-list li {
+	margin: 0 0 10px;
+}
+
+.detail-section .checkbox-list .input-wrap label {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 4px 0 0;
+	padding: 0 3px;
+	font: 300 18px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.detail-section .checkbox-list .input-wrap input[type="radio"] {
+	display: none;
+}
+
+.detail-section .checkbox-list .input-wrap input[type="radio"] + span {
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border: 1px solid;
+	border-color: #dcdae1;
+	border-radius: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 7px;
+	padding: 7px;
+	margin: -4px 6px 0 0;
+	position: relative;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+	-webkit-appearance: none;
+}
+
+.detail-section .checkbox-list .input-wrap input[type="radio"]:checked + span {
+	color: #f00;
+	background: #4e2478;
+	border-color: #4e2478;
+}
+
+.detail-section .checkbox-list .input-wrap input[type="radio"]:checked + span:after {
+	background: #fff;
+	border-radius: 50px;
+	content: " ";
+	height: 10px;
+	left: 4px;
+	position: absolute;
+	top: 4px;
+	width: 10px;
+}
+
+.detail-section .form-control {
+	color: #aca6a8;
+	height: 45px;
+}
+
+.detail-section .form-control::-webkit-input-placeholder {
+	color: #aca6a8;
+}
+
+.detail-section .form-control::-moz-placeholder {
+	opacity: 1;
+	color: #aca6a8;
+}
+
+.detail-section .form-control:-moz-placeholder {
+	color: #aca6a8;
+}
+
+.detail-section .form-control:-ms-input-placeholder {
+	color: #aca6a8;
+}
+
+.detail-section .form-control.placeholder {
+	color: #aca6a8;
+}
+
+.detail-section .jcf-select {
+	font: 300 12px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	height: 45px;
+	width: 100%;
+	padding-left: 10px;
+	border-radius: 3px;
+	border-color: #dedbdb;
+	min-width: 0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .15) inset;
+}
+
+.detail-section .jcf-select .jcf-select-text {
+	font: 300 12px/44px "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.detail-section .jcf-select .jcf-select-opener {
+	background: none;
+}
+
+.detail-section .jcf-select .jcf-select-opener:after {
+	content: "";
+	position: absolute;
+	top: 17px;
+	left: 7px;
+	width: 0;
+	height: 0;
+	border: 0 solid transparent;
+	border-left-width: 6px;
+	border-right-width: 6px;
+	border-top: 7px solid #988f9f;
+}
+
+.detail-section .jcf-textarea {
+	height: 127px;
+	resize: none;
+}
+
+.detail-section textarea {
+	height: 127px !important;
+}
+
+.detail-section .captcha-wrap {
+	overflow: hidden;
+	padding: 25px 0 7px;
+}
+
+.detail-section .captcha-wrap .form-group {
+	width: 160px;
+	float: left;
+	margin: 0 0 15px;
+}
+
+.rtl .detail-section .captcha-wrap .form-group {
+	float: right;
+}
+
+.detail-section .captcha-wrap .img-wrap {
+	float: left;
+	width: 79px;
+	padding: 5px 0;
+	margin: 0 15px;
+}
+
+.rtl .detail-section .captcha-wrap .img-wrap {
+	float: right;
+}
+
+.detail-section .jcf-checkbox span {
+	border-width: 0 0 2px 2px;
+	width: 11px;
+	height: 5px;
+}
+
+.detail-section label {
+	color: #aca6a8;
+}
+
+.detail-section .btn-wrap {
+	overflow: hidden;
+}
+
+.detail-section .btn-wrap .content-wrap {
+	overflow: hidden;
+	padding: 11px 0;
+}
+
+.detail-section .btn-success {
+	width: 116px;
+	padding: 12px 8px 8px;
+	float: left;
+	text-decoration: none;
+}
+
+.detail-section .btn-success:hover {
+	text-decoration: none;
+}
+
+.detail-section .btn-default {
+	padding: 12px 8px 8px;
+	float: right;
+	width: 175px;
+}
+
+/*---------------------------------
+18. Styles for description-block
+---------------------------------*/
+
+.description-block {
+	padding: 33px 0;
+}
+
+.description-block .panel {
+	margin: 0 0 15px;
+	position: relative;
+	padding: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	counter-increment: step-counter;
+}
+
+.description-block .panel:before {
+	width: 36px;
+	height: 36px;
+	background: #4e2478;
+	content: counter(step-counter);
+	counter-increment: number;
+	position: absolute;
+	top: 14px;
+	left: 14px;
+	color: #fff;
+	z-index: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-radius: 50%;
+	overflow: hidden;
+	font: 700 18px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.description-block .panel h4 a {
+	padding: 25px 63px 16px;
+	display: block;
+	font: 700 18px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background: #fff;
+	text-transform: uppercase;
+	color: #3c3c3c;
+	position: relative;
+}
+
+.description-block .panel h4 a.collapsed {
+	background: #f8f8f8;
+}
+
+.description-block .panel h4 a:hover,
+.description-block .panel h4 a:focus {
+	text-decoration: none;
+}
+
+.description-block .tab-content .img-wrap {
+	width: 300px;
+	height: 320px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	margin: 0 auto 15px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.description-block .nav-tabs {
+	border-bottom: none;
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.description-block .nav-tabs a {
+	width: 50px;
+	height: 55px;
+	padding: 0;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-right: 16px;
+}
+
+.description-block .nav-tabs a .image-hold {
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	height: 99px;
+}
+
+.description-block .panel-default > .panel-heading + .panel-collapse > .panel-body {
+	border: none;
+}
+
+.description-block .panel-heading {
+	background: transparent;
+	padding: 0;
+}
+
+.description-block .size-list li {
+	font-size: 0;
+	line-height: 0;
+	padding: 11px 5px 11px 5px;
+	overflow: hidden;
+	border-bottom: 1px solid #e1e1e1;
+}
+
+.description-block .size-list li:last-child {
+	border-bottom: none;
+}
+
+.description-block .size-list .select-wrap {
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(100% - 78px);
+}
+
+.description-block .size-list .price {
+	width: 78px;
+	display: inline-block;
+	vertical-align: middle;
+	font: 700 18px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-align: right;
+}
+
+.description-block .input-wrap {
+	line-height: 1;
+	display: inline-block;
+	vertical-align: middle;
+	margin: -3px 0 0;
+}
+
+.description-block label {
+	font-size: 0;
+	line-height: 0;
+	display: block;
+	margin: 0;
+}
+
+.description-block label .image {
+	display: inline-block;
+	vertical-align: middle;
+	width: 45px;
+	font: 300 16px/16px "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	padding: 0 5px;
+}
+
+.description-block label .text {
+	font: 300 16px/16px "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(100% - 71px);
+}
+
+.description-block input[type="radio"] {
+	display: none;
+}
+
+.description-block input[type="radio"] + span {
+	width: 20px;
+	height: 20px;
+	background-color: #fff;
+	border: 1px solid;
+	border-color: #dcdae1;
+	border-radius: 50px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 7px;
+	padding: 7px;
+	margin: -4px 6px 0 0;
+	position: relative;
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+	-webkit-appearance: none;
+}
+
+.description-block input[type="radio"]:checked + span {
+	color: #f00;
+	background: #4e2478;
+	border-color: #4e2478;
+}
+
+.description-block input[type="radio"]:checked + span:after {
+	background: #fff;
+	border-radius: 50px;
+	content: " ";
+	height: 10px;
+	left: 4px;
+	position: absolute;
+	top: 4px;
+	width: 10px;
+}
+
+.description-block .giftinfo-block {
+	font: 400 16px/1.87 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	color: #504d50;
+	padding: 50px 0;
+}
+
+.description-block .giftinfo-block .title {
+	font: 700 18px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	display: block;
+	text-transform: uppercase;
+	color: #3c3c3c;
+	margin: 0 0 10px;
+}
+
+.description-block .giftinfo-block .gift-list li {
+	padding: 0 15px;
+}
+
+.description-block .giftinfo-block p {
+	margin: 0 0 31px;
+}
+
+.description-block .elements-hold {
+	padding: 25px 0;
+	font: 300 12px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.description-block .elements-hold .heading {
+	font: 700 18px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 0 10px;
+}
+
+.description-block .elements-hold label {
+	font: 600 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.description-block .jcf-scrollable-wrapper {
+	width: 100% !important;
+}
+
+.description-block textarea {
+	font: 300 12px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	height: 127px !important;
+	width: 100% !important;
+	color: #5c5959;
+	padding: 15px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .15) inset;
+}
+
+.description-block textarea::-webkit-input-placeholder {
+	color: #5c5959;
+}
+
+.description-block textarea::-moz-placeholder {
+	opacity: 1;
+	color: #5c5959;
+}
+
+.description-block textarea:-moz-placeholder {
+	color: #5c5959;
+}
+
+.description-block textarea:-ms-input-placeholder {
+	color: #5c5959;
+}
+
+.description-block textarea.placeholder {
+	color: #5c5959;
+}
+
+.description-block .jcf-select {
+	font: 300 12px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	height: 45px;
+	width: 100%;
+	max-width: 420px;
+	padding-left: 10px;
+	border-radius: 3px;
+	border-color: #dedbdb;
+	color: #5c5959;
+	min-width: 0;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .15) inset;
+}
+
+.description-block .jcf-select .jcf-select-text {
+	font: 300 12px/44px "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.description-block .jcf-select .jcf-select-opener {
+	background: none;
+}
+
+.description-block .jcf-select .jcf-select-opener:after {
+	content: "";
+	position: absolute;
+	top: 17px;
+	left: 7px;
+	width: 0;
+	height: 0;
+	border: 0 solid transparent;
+	border-left-width: 6px;
+	border-right-width: 6px;
+	border-top: 7px solid #988f9f;
+}
+
+.description-block .jcf-textarea {
+	height: 127px;
+	resize: none;
+}
+
+.description-block .btn-default {
+	font: 700 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	width: 210px;
+	margin: 25px 0 0 30px;
+	padding: 13px 15px 8px;
+}
+
+/*---------------------------------
+19. Styles for service-section
+---------------------------------*/
+
+.service-section h2 {
+	margin: 0 0 7px;
+}
+
+.service-section .info-hold {
+	padding: 22px 0;
+	font: 400 16px/2.3 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.service-section .info-hold .info-hold {
+	margin: 0 0 25px;
+}
+
+/*---------------------------------
+20. Styles for service-detail
+---------------------------------*/
+
+.service-detail {
+	padding: 28px 0;
+}
+
+.service-detail .container {
+	border-top: 1px solid #ebebeb;
+}
+
+.service-detail .container .content-wrap {
+	padding: 25px 0 10px;
+	text-align: center;
+	max-width: 400px;
+	margin: 0 auto;
+	line-height: 2.3;
+}
+
+.service-detail .icon-hold {
+	margin: 0 0 25px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.service-detail .heading {
+	font: 900 18px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 0 15px;
+	color: #3c3c3c;
+}
+
+.service-detail .text-wrap {
+	padding: 25px 0 10px;
+	font: 400 15px/1.8 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	color: #504d50;
+}
+
+.service-detail .text-wrap .title-text {
+	font: 900 18px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #3c3c3c;
+	text-transform: uppercase;
+	display: block;
+	margin: 0 0 15px;
+}
+
+.service-detail .text-wrap p {
+	margin: 0 0 15px;
+}
+
+/*---------------------------------
+21. Styles for contact-section
+---------------------------------*/
+
+.contact-section {
+	padding: 22px 0;
+}
+
+.contact-section .map-block {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	height: 279px;
+	border-radius: 10px;
+	margin: 0 0 48px;
+}
+
+.contact-section .heading {
+	display: block;
+	text-transform: uppercase;
+	margin: 0 0 10px;
+	font: 900 18px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.contact-section h2 {
+	margin: 0 0 20px;
+}
+
+.contact-section .message-form .captcha-wrap {
+	overflow: hidden;
+}
+
+.contact-section .message-form .captcha-wrap .form-group {
+	width: 198px;
+	float: left;
+	margin: 0 0 15px;
+}
+
+.rtl .contact-section .message-form .captcha-wrap .form-group {
+	float: right;
+}
+
+.contact-section .message-form .captcha-wrap .img-wrap {
+	float: left;
+	width: 79px;
+	padding: 5px 0;
+	margin: 0 15px;
+}
+
+.rtl .contact-section .message-form .captcha-wrap .img-wrap {
+	float: right;
+}
+
+.contact-section .message-form .jcf-textarea {
+	height: 127px;
+	resize: none;
+	border-radius: 3px;
+}
+
+.contact-section .message-form textarea {
+	height: 127px !important;
+	font: 300 14px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	height: 42px;
+	padding: 15px 10px;
+	color: #5c5959;
+	border-radius: 3px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, .15) inset;
+	width: 100% !important;
+}
+
+.contact-section .message-form textarea::-webkit-input-placeholder {
+	color: #5c5959;
+}
+
+.contact-section .message-form textarea::-moz-placeholder {
+	opacity: 1;
+	color: #5c5959;
+}
+
+.contact-section .message-form textarea:-moz-placeholder {
+	color: #5c5959;
+}
+
+.contact-section .message-form textarea:-ms-input-placeholder {
+	color: #5c5959;
+}
+
+.contact-section .message-form textarea.placeholder {
+	color: #5c5959;
+}
+
+.contact-section .btn-wrap {
+	padding: 7px 0;
+}
+
+.contact-section .btn-default {
+	width: 198px;
+	padding: 12px 8px 8px;
+}
+
+.contact-section .form-hold {
+	padding: 0 9px;
+	font: 300 16px/1.8 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+}
+
+.contact-section .form-hold p {
+	margin: 0 0 25px;
+}
+
+.contact-section .form-hold .form-control {
+	font: 300 14px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	height: 42px;
+	color: #5c5959;
+}
+
+.contact-section .form-hold .form-control::-webkit-input-placeholder {
+	color: #5c5959;
+}
+
+.contact-section .form-hold .form-control::-moz-placeholder {
+	opacity: 1;
+	color: #5c5959;
+}
+
+.contact-section .form-hold .form-control:-moz-placeholder {
+	color: #5c5959;
+}
+
+.contact-section .form-hold .form-control:-ms-input-placeholder {
+	color: #5c5959;
+}
+
+.contact-section .form-hold .form-control.placeholder {
+	color: #5c5959;
+}
+
+.contact-section .form-hold .form-group {
+	margin-bottom: 27px;
+}
+
+.contact-section .contact-list .title {
+	display: block;
+	text-transform: uppercase;
+	font: 700 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0 0 4px;
+}
+
+.contact-section .contact-list li {
+	margin: 0 0 32px;
+	font: 300 16px/10px "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	padding: 0 0 0 52px;
+	position: relative;
+}
+
+.contact-section .contact-list li i {
+	position: absolute;
+	top: 0;
+	font-size: 43px;
+	color: #4e2478;
+	left: -8px;
+}
+
+.contact-section .contact-list li i.glyphicon-earphone {
+	font-size: 39px;
+}
+
+.contact-section .contact-list li i.glyphicon-envelope {
+	font-size: 37px;
+}
+
+.rtl .contact-section .contact-list li i {
+	left: auto;
+	right: -8px;
+}
+
+.contact-section .contact-list li a {
+	text-decoration: none;
+}
+
+.contact-section .contact-list li a.mail {
+	color: #4e2478;
+}
+
+.rtl .contact-section .contact-list li {
+	padding: 0 52px 0 0;
+}
+
+.contact-section .contact-list address {
+	margin: 0;
+	line-height: 1.4;
+}
+
+.contact-section .contact-list dl {
+	overflow: hidden;
+	margin: 0;
+}
+
+.contact-section .contact-list dl dt {
+	margin: 0;
+	float: left;
+	font: 600 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.rtl .contact-section .contact-list dl dt {
+	float: right;
+}
+
+.contact-section .contact-list dl dd {
+	overflow: hidden;
+}
+
+.form-control {
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, .15);
+	border-radius: 3px;
+	padding: 9px 12px 3px;
+}
+
+.form-control:focus {
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, .15);
+}
+
+textarea,
+.jcf-textarea {
+	resize: none;
+	width: 100%;
+	border-radius: 3px;
+}
+
+/*-----------------------------------
+1. styles for header of the page
+----------------------------------*/
+
+#header {
+	position: relative;
+}
+
+#header .top-block {
+	font-size: 0;
+	line-height: 0;
+	overflow: hidden;
+	background: #f4eefa;
+	padding: 7px 0 3px;
+}
+
+#header .contact-list {
+	font-size: 0;
+	line-height: 0;
+}
+
+#header .contact-list li {
+	font: 400 16px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #8f8a8e;
+	padding: 10px 7px 10px 25px;
+	position: relative;
+}
+
+#header .contact-list li a {
+	text-decoration: none;
+	color: #8f8a8e;
+	-webkit-transition: color .5s ease;
+	transition: color .5s ease;
+}
+
+#header .contact-list li a:hover {
+	color: #639ddc;
+}
+
+#header .contact-list li .icon-wrap {
+	color: #9073b5;
+	position: absolute;
+	top: 0;
+	left: 5px;
+}
+
+#header address {
+	font: 300 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0;
+}
+
+#header .jcf-select {
+	min-width: 70px;
+	border: none;
+	margin: 0;
+	background: transparent;
+}
+
+#header .jcf-select .jcf-select-text {
+	margin: 0 14px 0 0;
+	color: #535152;
+}
+
+#header .jcf-select .jcf-select-text span {
+	padding: 0 0 0 4px;
+}
+
+.rtl #header .jcf-select .jcf-select-text span {
+	padding: 0 4px 0 0;
+}
+
+#header .jcf-select-opener {
+	background: none;
+	width: 0;
+	height: 0;
+	top: 8px;
+	right: 4px;
+	border: 0 solid transparent;
+	border-left-width: 4px;
+	border-right-width: 4px;
+	border-top: 5px solid #98909d;
+}
+
+.link-opener {
+	text-decoration: none;
+	color: #000;
+	font-size: 25px;
+	-webkit-transition: opacity .5s ease;
+	transition: opacity .5s ease;
+}
+
+.link-opener:hover {
+	text-decoration: none;
+	opacity: .5;
+}
+
+/*-----------------------------------
+2. Styles for logo-wrap
+-----------------------------*/
+
+.login-wrap {
+	font-size: 0;
+	line-height: 0;
+	width: 195px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.login-wrap .select-form {
+	font: 300 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	display: inline-block;
+	vertical-align: middle;
+	width: 65px;
+	padding: 0 10px 0 0;
+	text-align: left;
+}
+
+.login-wrap .log-list {
+	font-size: 0;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 0;
+}
+
+.login-wrap .log-list li {
+	display: inline-block;
+	vertical-align: middle;
+	font: 400 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	padding: 0 5px;
+	position: relative;
+}
+
+.login-wrap .log-list li:after {
+	content: "/";
+	position: absolute;
+	top: 0;
+	right: -3px;
+	color: #8d72b5;
+}
+
+.login-wrap .log-list li a {
+	text-decoration: none;
+	color: #8d72b5;
+	-webkit-transition: color .5s ease;
+	transition: color .5s ease;
+}
+
+.login-wrap .log-list li a:hover {
+	color: #7b7878;
+}
+
+.login-wrap .log-list li:last-child:after {
+	font: 300 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	content: none;
+}
+
+/*--------------------------------
+3. styles for bottom block
+-------------------------------*/
+
+.bottom-block {
+	padding: 22px 0 0;
+	font-size: 0;
+	line-height: 0;
+	-webkit-transition: padding .5s ease;
+	transition: padding .5s ease;
+}
+
+.bottom-block .logo-wrap {
+	width: 210px;
+	margin: 0 0 15px;
+}
+
+.bottom-block .logo-wrap a {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.rtl .bottom-block .logo-wrap a {
+	width: 210px;
+}
+
+.bottom-block .search-form {
+	width: 220px;
+	float: left;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 4px rgba(0, 0, 0, .05);
+	position: relative;
+}
+
+.bottom-block .search-form .form-control {
+	background: transparent;
+	width: 100%;
+	border: none;
+	outline: none;
+	color: #b0b1b0;
+	border: 1px solid #e6e6e6;
+	border-radius: 3px;
+	height: 36px;
+	padding: 8px 10px 5px 40px;
+	font-size: 14px;
+	-webkit-appearance: none;
+	outline: none;
+	box-shadow: none;
+}
+
+.bottom-block .search-form .form-control::-webkit-input-placeholder {
+	outline: none;
+	color: #b0b1b0;
+}
+
+.bottom-block .search-form .form-control::-moz-placeholder {
+	opacity: 1;
+	outline: none;
+	color: #b0b1b0;
+}
+
+.bottom-block .search-form .form-control:-moz-placeholder {
+	outline: none;
+	color: #b0b1b0;
+}
+
+.bottom-block .search-form .form-control:-ms-input-placeholder {
+	outline: none;
+	color: #b0b1b0;
+}
+
+.bottom-block .search-form .form-control.placeholder {
+	outline: none;
+	color: #b0b1b0;
+}
+
+.bottom-block .search-form button {
+	position: absolute;
+	top: 8px;
+	left: 10px;
+	color: #b0b1b0;
+	background: none;
+	border: none;
+	font-size: 19px;
+	-webkit-transition: color .5s ease;
+	transition: color .5s ease;
+	z-index: 2;
+	line-height: 25px;
+	padding: 0;
+}
+
+.bottom-block .search-form button:hover {
+	color: #30a040;
+}
+
+.bottom-block .cart-holder {
+	float: right;
+	width: 38px;
+}
+
+.bottom-block .cart-holder .cartinfo-wrap {
+	padding: 7px 0 0;
+	position: relative;
+	width: 25px;
+}
+
+.bottom-block .cart-holder a {
+	text-decoration: none;
+	color: #363535;
+	font-size: 25px;
+	font-weight: 900;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+}
+
+.bottom-block .cart-holder .items-selected {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: -9px;
+	right: -12px;
+	display: block;
+	text-align: center;
+	border-radius: 50%;
+	overflow: hidden;
+	color: #fff;
+	background: #8c72b3;
+	font: 600 14px/23px "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.bottom-block .cart-holder .cost-block {
+	border-radius: 4px;
+	padding: 10px;
+	background: #363435;
+	color: #fff;
+	position: absolute;
+	top: -12px;
+	width: 94px;
+	right: calc(100% + 10px);
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity .5s , visibility .5s linear;
+	transition: opacity .5s , visibility .5s linear;
+}
+
+.bottom-block .cart-holder .cost-block:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -7px;
+	width: 0;
+	height: 0;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border: 0 solid transparent;
+	border-bottom-width: 7px;
+	border-top-width: 7px;
+	border-left: 9px solid #363435;
+}
+
+.bottom-block .cart-holder .cost-block .text {
+	font: 300 16px/1.2 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	display: block;
+	margin: 0 0 2px;
+}
+
+.bottom-block .cart-holder .cost-block .price {
+	font: 400 18px/1.2 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	display: block;
+}
+
+.popup-active .bottom-block .cart-holder .cost-block {
+	opacity: 1;
+	visibility: visible;
+}
+
+.navbar-default {
+	background: none;
+}
+
+/*---------------------------------
+4. Styles for  main navigation 
+-------------------------------*/
+
+.navbar {
+	-webkit-transition: padding .5s ease;
+	transition: padding .5s ease;
+	margin: 0;
+	border-radius: 0;
+	border: none;
+}
+
+.navbar .navbar-collapse {
+	border-top: none;
+}
+
+.navbar .navbar-header {
+	min-height: 0;
+}
+
+.navbar .nav {
+	padding: 15px 10px 5px;
+}
+
+.navbar .nav li {
+	text-transform: uppercase;
+	font: 400 21px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0 0 9px;
+}
+
+.navbar .nav li a {
+	text-decoration: none;
+	color: #fff;
+	padding: 0;
+	-webkit-transition: opacity .5s ease;
+	transition: opacity .5s ease;
+}
+
+.navbar .nav li a:hover {
+	opacity: .5;
+	background: none;
+	color: #fff;
+}
+
+.navbar .nav li.active a {
+	opacity: .5;
+	background: none;
+	color: #fff;
+}
+
+.navbar .nav li.active a:hover {
+	color: #fff;
+	opacity: .5;
+	background: none;
+}
+
+.navbar-toggle {
+	position: absolute;
+	top: -112px;
+	right: 18px;
+}
+
+.rtl .navbar-toggle {
+	right: auto;
+	left: 18px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background: none;
+}
+
+/*-------------------------
+5. Styles for fixed header
+--------------------------*/
+
+.rtl .login-wrap {
+	text-align: left;
+}
+
+.rtl .login-wrap .select-form {
+	text-align: right;
+}
+
+.rtl .log-list {
+	width: calc( 100% - 85px);
+}
+
+.rtl .log-list li:first-child:after {
+	content: none;
+}
+
+.rtl .log-list li:last-child:after {
+	content: "/";
+}
+
+.rtl .events-block .content-hold .image-wrap {
+	text-align: left;
+}
+
+/*----------------------------
+21. Styles for footer
+---------------------------*/
+
+#footer {
+	font-size: 0;
+	line-height: 0;
+}
+
+#footer h3 {
+	font: 600 15px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	text-transform: uppercase;
+	color: #3f3a3e;
+	margin: 0 0 10px;
+}
+
+#footer .container {
+	border-top: 3px solid #ebebeb;
+}
+
+.links-block {
+	padding: 25px 0;
+	font-size: 0;
+	line-height: 0;
+}
+
+.links-block .col {
+	padding: 0 15px 0 0;
+	margin: 0 0 15px;
+}
+
+.links-block .extra-links li {
+	font: 400 13px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	margin: 0 0 5px;
+}
+
+.links-block .extra-links li a {
+	text-decoration: none;
+	color: #878286;
+	-webkit-transition: opacity .5s ease;
+	transition: opacity .5s ease;
+}
+
+.links-block .extra-links li a:hover {
+	opacity: .5;
+}
+
+.follow-hold {
+	padding: 25px 0;
+	text-align: center;
+	border-top: 1px solid #ebebeb;
+}
+
+.follow-hold .social-networks {
+	font-size: 0;
+	line-height: 0;
+}
+
+.follow-hold .social-networks li {
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 32px;
+	padding: 0 3px;
+	margin: 0 0 15px;
+}
+
+.follow-hold .social-networks li a {
+	text-decoration: none;
+	color: #3b5998;
+	-webkit-transition: color .5s linear;
+	transition: color .5s linear;
+}
+
+.follow-hold .social-networks li a:hover {
+	color: #1e2e4f;
+}
+
+.follow-hold .social-networks li a.twitter {
+	color: #55acee;
+}
+
+.follow-hold .social-networks li a.twitter:hover {
+	color: #18324c;
+}
+
+.follow-hold .social-networks li a.instagram {
+	color: #316699;
+}
+
+.follow-hold .social-networks li a.instagram:hover {
+	color: #18324c;
+}
+
+.follow-hold .social-networks li a.gplus {
+	color: #e02f2f;
+}
+
+.follow-hold .social-networks li a.gplus:hover {
+	color: #931616;
+}
+
+.follow-hold .copyright-block {
+	font: 400 13px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #4c494b;
+}
+
+.follow-hold .copyright-block p {
+	margin: 0 0 9px;
+}
+
+.follow-hold .follow-block {
+	font: 400 13px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	color: #4c494b;
+	width: 100%;
+}
+
+.follow-hold .follow-block a {
+	text-decoration: none;
+	color: #4dc5ac;
+	-webkit-transition: opacity .5s ease;
+	transition: opacity .5s ease;
+}
+
+.follow-hold .follow-block a:hover {
+	opacity: .5;
+}
+
+.follow-hold .follow-block p {
+	margin: 0 0 5px;
+}
+
+.rtl .follow-hold {
+	text-align: right;
+}
+
+/* custom checkbox styles */
+
+.jcf-checkbox {
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+	background: #fff;
+	border: 1px solid #777;
+	margin: 0 3px 0 0;
+	height: 16px;
+	width: 16px;
+}
+
+.jcf-checkbox span {
+	position: absolute;
+	display: none;
+	height: 4px;
+	width: 8px;
+	top: 50%;
+	left: 50%;
+	margin: -7px 0 0 -6px;
+	border: 3px solid #777;
+	border-width: 0 0 3px 3px;
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865483, M12=0.7071067811865467, M21=-0.7071067811865467, M22=0.7071067811865483, SizingMethod='auto expand')";
+}
+
+:root .jcf-checkbox span {
+	margin: -4px 0 0 -5px;
+}
+
+.jcf-checkbox input[type="checkbox"] {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	margin: 0;
+	left: 0;
+	top: 0;
+}
+
+.jcf-checkbox.jcf-checked span {
+	display: block;
+}
+
+/* custom radio styles */
+
+.jcf-radio {
+	vertical-align: middle;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	cursor: default;
+	background: #fff;
+	border: 1px solid #777;
+	border-radius: 9px;
+	margin: 0 3px 0 0;
+	height: 16px;
+	width: 16px;
+}
+
+.jcf-radio span {
+	display: none;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	right: 3px;
+	bottom: 3px;
+	background: #777;
+	border-radius: 100%;
+}
+
+.jcf-radio input[type="radio"] {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border: 0;
+	margin: 0;
+	left: 0;
+	top: 0;
+}
+
+.jcf-radio.jcf-checked span {
+	display: block;
+}
+
+/* custom select styles */
+
+.jcf-select {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	border: 1px solid #777;
+	background: #fff;
+	margin: 0 0 12px;
+	min-width: 150px;
+	height: 26px;
+}
+
+.jcf-select select {
+	z-index: 1;
+	left: 0;
+	top: 0;
+}
+
+.jcf-select .jcf-select-text {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: default;
+	display: block;
+	font-size: 13px;
+	line-height: 26px;
+	margin: 0 35px 0 8px;
+}
+
+.jcf-select .jcf-select-opener {
+	position: absolute;
+	text-align: center;
+	background: #aaa;
+	width: 26px;
+	bottom: 0;
+	right: 0;
+	top: 0;
+}
+
+body > .jcf-select-drop {
+	position: absolute;
+	margin: -1px 0 0;
+	z-index: 9999;
+}
+
+body > .jcf-select-drop.jcf-drop-flipped {
+	margin: 1px 0 0;
+}
+
+.jcf-select .jcf-select-drop {
+	position: absolute;
+	margin-top: 0;
+	z-index: 9999;
+	top: 100%;
+	left: -1px;
+	right: -1px;
+}
+
+.jcf-select .jcf-drop-flipped {
+	bottom: 100%;
+	top: auto;
+}
+
+.jcf-select-drop .jcf-select-drop-content {
+	border: 1px solid #4e2478;
+}
+
+/* multiple select styles */
+
+.jcf-list-box {
+	overflow: hidden;
+	display: inline-block;
+	border: 1px solid #b8c3c9;
+	min-width: 200px;
+	margin: 0 15px;
+}
+
+/* select options styles */
+
+.jcf-list {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	background: #fff;
+	line-height: 14px;
+	font-size: 12px;
+	width: 100%;
+}
+
+.jcf-list .jcf-list-content {
+	vertical-align: top;
+	display: inline-block;
+	overflow: auto;
+	width: 100%;
+}
+
+.jcf-list ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.jcf-list ul li {
+	overflow: hidden;
+	display: block;
+}
+
+.jcf-list .jcf-overflow {
+	overflow: auto;
+}
+
+.jcf-list .jcf-option {
+	overflow: hidden;
+	cursor: default;
+	display: block;
+	padding: 10px 9px;
+	color: #656565;
+	height: 1%;
+}
+
+.jcf-list .jcf-disabled {
+	background: #fff !important;
+	color: #aaa !important;
+}
+
+.jcf-select-drop .jcf-hover,
+.jcf-list-box .jcf-selected {
+	background: #4e2478;
+	color: #fff;
+}
+
+.jcf-list .jcf-optgroup-caption {
+	white-space: nowrap;
+	font-weight: bold;
+	display: block;
+	padding: 5px 9px;
+	cursor: default;
+	color: #000;
+}
+
+.jcf-list .jcf-optgroup .jcf-option {
+	padding-left: 30px;
+}
+
+/* custom textarea styles */
+
+.jcf-textarea {
+	border: 1px solid #b8c3c9;
+	box-sizing: content-box;
+	display: inline-block;
+	position: relative;
+}
+
+.jcf-textarea .jcf-scrollbar-horizontal {
+	display: none;
+	height: 0;
+}
+
+.jcf-textarea textarea {
+	padding: 8px 10px;
+	border: none;
+	margin: 0;
+}
+
+.jcf-textarea .jcf-resize {
+	position: absolute;
+	text-align: center;
+	cursor: se-resize;
+	background: #e3e3e3;
+	font-weight: bold;
+	line-height: 15px;
+	text-indent: 1px;
+	font-size: 12px;
+	height: 15px;
+	width: 14px;
+	bottom: 0;
+	right: 0;
+	display: none;
+}
+
+.jcf-textarea .jcf-resize:before {
+	border: 1px solid #000;
+	border-width: 0 1px 1px 0;
+	display: block;
+	margin: 4px 0 0 3px;
+	width: 6px;
+	height: 6px;
+	content: "";
+}
+
+/* custom file input styles */
+
+.jcf-file {
+	display: inline-block;
+	white-space: nowrap;
+	position: relative;
+	overflow: hidden;
+	background: #fff;
+}
+
+.jcf-file .jcf-real-element {
+	position: absolute;
+	font-size: 200px;
+	height: 200px;
+	margin: 0;
+	right: 0;
+	top: 0;
+}
+
+.jcf-file .jcf-fake-input {
+	display: inline-block;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	vertical-align: top;
+	overflow: hidden;
+	border: 1px solid #777;
+	padding: 0 8px;
+	font-size: 13px;
+	line-height: 28px;
+	height: 28px;
+	width: 125px;
+}
+
+.jcf-file .jcf-upload-button {
+	display: inline-block;
+	vertical-align: top;
+	white-space: nowrap;
+	overflow: hidden;
+	border: 1px solid #777;
+	margin: 0 0 0 -1px;
+	padding: 0 10px;
+	line-height: 28px;
+	height: 28px;
+}
+
+/* custom range input styles */
+
+.jcf-range {
+	display: inline-block;
+	min-width: 200px;
+	margin: 0 10px;
+	width: 130px;
+}
+
+.jcf-range .jcf-range-track {
+	margin: 0 20px 0 0;
+	position: relative;
+	display: block;
+}
+
+.jcf-range .jcf-range-wrapper {
+	background: #e5e5e5;
+	border-radius: 5px;
+	display: block;
+	margin: 5px 0;
+	height: 10px;
+}
+
+.jcf-range.jcf-vertical {
+	width: auto;
+}
+
+.jcf-range.jcf-vertical .jcf-range-wrapper {
+	margin: 0;
+	width: 10px;
+	height: auto;
+	padding: 20px 0 0;
+}
+
+.jcf-range.jcf-vertical .jcf-range-track {
+	height: 180px;
+	width: 10px;
+}
+
+.jcf-range.jcf-vertical .jcf-range-handle {
+	left: -5px;
+	top: 3px !important;
+	bottom: 3px !important;
+}
+
+.jcf-range .jcf-range-handle {
+	position: absolute;
+	background: #aaa;
+	border-radius: 19px;
+	width: 19px;
+	height: 19px;
+	margin: -4px 0 0;
+	z-index: 1;
+	top: 0;
+	left: 0;
+}
+
+.jcf-range .jcf-range-mark {
+	position: absolute;
+	overflow: hidden;
+	background: #000;
+	width: 1px;
+	height: 3px;
+	top: -7px;
+	margin: 0 0 0 9px;
+}
+
+.jcf-range.jcf-vertical .jcf-range-mark {
+	margin: 0 0 9px;
+	left: 14px;
+	top: auto;
+	width: 3px;
+	height: 1px;
+}
+
+.jcf-range.jcf-focus .jcf-range-handle {
+	border: 1px solid #f00;
+	margin: -5px 0 0 -1px;
+}
+
+.jcf-range.jcf-disabled {
+	background: none !important;
+	opacity: .3;
+}
+
+/* custom number input styles */
+
+.jcf-number {
+	display: inline-block;
+	position: relative;
+	height: 32px;
+}
+
+.jcf-number input {
+	-moz-appearance: textfield;
+}
+
+.jcf-number input::-webkit-inner-spin-button,
+.jcf-number input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+}
+
+.jcf-number input {
+	box-sizing: border-box;
+	border: 1px solid #777;
+	padding: 3px 27px 3px 7px;
+	margin: 0;
+	height: 100%;
+}
+
+.jcf-number .jcf-btn-dec,
+.jcf-number .jcf-btn-inc {
+	position: absolute;
+	background: #aaa;
+	width: 20px;
+	height: 15px;
+	right: 1px;
+	top: 1px;
+}
+
+.jcf-number .jcf-btn-dec {
+	top: auto;
+	bottom: 1px;
+}
+
+.jcf-number .jcf-btn-dec:hover,
+.jcf-number .jcf-btn-inc:hover {
+	background: #e6e6e6;
+}
+
+.jcf-number.jcf-disabled .jcf-btn-dec:hover,
+.jcf-number.jcf-disabled .jcf-btn-inc:hover {
+	background: #aaa;
+}
+
+.jcf-number .jcf-btn-dec:before,
+.jcf-number .jcf-btn-inc:before {
+	position: absolute;
+	content: "";
+	width: 0;
+	height: 0;
+	top: 50%;
+	left: 50%;
+	margin: -6px 0 0 -4px;
+	border: 4px solid #aaa;
+	border-color: transparent transparent #000 transparent;
+}
+
+.jcf-number .jcf-btn-dec:before {
+	margin: -1px 0 0 -4px;
+	border-color: #000 transparent transparent transparent;
+}
+
+.jcf-number.jcf-disabled .jcf-btn-dec:before,
+.jcf-number.jcf-disabled .jcf-btn-inc:before,
+.jcf-number .jcf-btn-dec.jcf-disabled:before,
+.jcf-number .jcf-btn-inc.jcf-disabled:before {
+	opacity: .3;
+}
+
+.jcf-number.jcf-disabled input {
+	background: #ddd;
+}
+
+/* custom scrollbars styles */
+
+.jcf-scrollable-wrapper {
+	box-sizing: content-box;
+	position: relative;
+}
+
+.jcf-scrollbar-vertical {
+	position: absolute;
+	cursor: default;
+	background: transparent;
+	width: 9px;
+	bottom: 0;
+	height: 100% !important;
+	right: 0;
+	top: 0;
+	padding: 3px 0;
+}
+
+.jcf-scrollbar-vertical .jcf-scrollbar-dec,
+.jcf-scrollbar-vertical .jcf-scrollbar-inc {
+	background: none;
+	height: 2px;
+	width: 14px;
+	left: 0;
+	top: 0;
+	display: none;
+}
+
+.jcf-scrollbar-vertical .jcf-scrollbar-inc {
+	top: auto;
+	bottom: 0;
+}
+
+.jcf-scrollbar-vertical .jcf-scrollbar-handle {
+	background: #888;
+	height: 1px;
+	border-radius: 2px;
+	width: 5px;
+}
+
+.jcf-scrollbar-horizontal {
+	position: absolute;
+	background: #e3e3e3;
+	right: auto;
+	top: auto;
+	left: 0;
+	bottom: 0;
+	width: 1px;
+	height: 14px;
+}
+
+.jcf-scrollbar-horizontal .jcf-scrollbar-dec,
+.jcf-scrollbar-horizontal .jcf-scrollbar-inc {
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	background: transparent;
+	height: 14px;
+	width: 14px;
+}
+
+.jcf-scrollbar-horizontal .jcf-scrollbar-inc {
+	left: auto;
+	right: 0;
+}
+
+.jcf-scrollbar-horizontal .jcf-scrollbar-slider {
+	display: inline-block;
+	position: relative;
+	height: 14px;
+}
+
+.jcf-scrollbar-vertical .jcf-scrollbar-slider {
+	height: 100% !important;
+}
+
+.jcf-scrollbar-horizontal .jcf-scrollbar-handle {
+	position: absolute;
+	background: #888;
+	height: 14px;
+}
+
+.jcf-scrollbar.jcf-inactive .jcf-scrollbar-handle {
+	visibility: hidden;
+}
+
+.jcf-scrollbar.jcf-inactive .jcf-scrollbar-dec,
+.jcf-scrollbar.jcf-inactive .jcf-scrollbar-inc {
+	background: transparent;
+}
+
+/* common custom form elements styles */
+
+.jcf-disabled {
+	background: #ddd !important;
+}
+
+img {
+	max-width: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+dt,
+dd {
+	line-height: 1.5;
+}
+
+#wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+@media (min-width: 350px) {
+	.links-block .col {
+		display: inline-block;
+		vertical-align: top;
+		width: 50%;
+	}
+}
+
+@media (min-width: 480px) {
+	.gallery-wrap .name {
+		font: 400 13px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.gallery-wrap .info-block {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		margin: 0 0 39px;
+	}
+
+	.gallery-wrap .info-block .img-wrap {
+		width: 35%;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.gallery-wrap .info-block .text-wrap {
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.gallery-wrap .heading {
+		font: 900 19px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.sales-wrap .name {
+		font: 400 13px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.sales-wrap .price {
+		font: 700 17px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.sales-wrap .info-block {
+		display: table;
+		width: 100%;
+		table-layout: fixed;
+		margin: 0 0 39px;
+	}
+
+	.sales-wrap .info-block .img-wrap {
+		width: 24%;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.sales-wrap .sale-price {
+		font: 400 24px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	h1 {
+		font: 900 30px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.product-block .products-list .text-hold {
+		font: 400 14px/1.8 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	}
+
+	.description-block .tab-content .img-wrap {
+		width: 400px;
+		height: 450px;
+	}
+
+	.description-block .nav-tabs {
+		max-width: 400px;
+	}
+
+	.description-block .nav-tabs a {
+		width: 60px;
+		height: 65px;
+	}
+
+	.bottom-block .search-form {
+		width: 300px;
+	}
+}
+
+@media (min-width: 500px) {
+	.product-block .filter-wrap .filter-list li {
+		width: 25%;
+	}
+
+	.product-block .sort-list .select-wrap {
+		width: 180px;
+		float: left;
+	}
+
+	.product-block .pagination-wrap {
+		text-align: right;
+	}
+
+	.links-block .col {
+		width: 25%;
+		margin: 0;
+	}
+}
+
+@media (min-width: 550px) {
+	.product-block .products-list .img-wrap {
+		width: 250px;
+		height: 250px;
+	}
+}
+
+@media (min-width: 768px) {
+	#main {
+		padding: 154px 0 10px;
+	}
+
+	.banner-wrap .image-holder {
+		height: 464px;
+	}
+
+	.banner-wrap .text-wrap {
+		font: 400 20px/1.3 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+		margin: 0 0 0 auto;
+	}
+
+	.banner-wrap .title-text {
+		font: 400 22px/1.3 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+		margin: 0 0 26px;
+	}
+
+	.banner-wrap .btn {
+		font: 400 19px/1.2 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.banner-wrap p {
+		margin: 0 0 30px;
+	}
+
+	.events-block .content-hold {
+		padding: 15px 10px;
+	}
+
+	.events-block .content-hold .image-wrap {
+		width: 50px;
+	}
+
+	.events-block .btn {
+		width: 120px;
+	}
+
+	.gallery-wrap .name {
+		font: 400 15px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.gallery-wrap .info-block .text-wrap {
+		padding: 14px 27px 0;
+	}
+
+	.gallery-wrap .heading {
+		font: 900 26px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.sales-wrap .name {
+		font: 400 15px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.sales-wrap .price {
+		font: 700 20px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.sales-wrap .info-block .text-wrap {
+		padding: 14px 10px 0 27px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+
+	.sales-wrap .title-text {
+		font: 900 24px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.sales-wrap .sale-price {
+		font: 400 20px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	h1 {
+		font: 900 36px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		margin: 0 0 7px;
+	}
+
+	h2 {
+		font: 900 26px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.about-section .text-block {
+		padding: 0 0 52px;
+	}
+
+	.about-section h3 {
+		font: 900 18px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.about-section .info-section {
+		padding: 25px 0;
+	}
+
+	.about-section .text-wrap {
+		font: 400 16px/2.25 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+		margin: 0;
+	}
+
+	.shopping-section .detail-wrap .image-wrap {
+		width: 120px;
+		display: table-cell;
+		vertical-align: middle;
+		margin: 0;
+	}
+
+	.shopping-section .detail-wrap .text-wrap {
+		display: table-cell;
+		vertical-align: middle;
+		padding: 0 0 0 13px;
+	}
+
+	.shopping-section table {
+		width: 100%;
+		text-align: left;
+		table-layout: fixed;
+		margin: 0 0 25px;
+	}
+
+	.shopping-section table th:first-child {
+		width: 34.3%;
+	}
+
+	.shopping-section tr {
+		border-bottom: 1px solid #e1e1e1;
+	}
+
+	.shopping-section td {
+		padding: 29px 10px 36px 0;
+	}
+
+	.shopping-section button {
+		margin: 0 0 0 auto;
+	}
+
+	.product-block .filter-wrap .filter-list {
+		display: inline-block;
+		vertical-align: middle;
+		width: 620px;
+	}
+
+	.product-block .filter-wrap .clear-wrap {
+		padding: 0 15px;
+		display: inline-block;
+		vertical-align: middle;
+		width: calc(100% - 620px);
+	}
+
+	.product-block .jcf-select {
+		font: 300 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.product-block .jcf-select .jcf-select-text {
+		font: 300 14px/44px "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.product-block .sort-list .left-block {
+		display: inline-block;
+		vertical-align: middle;
+		width: 28%;
+	}
+
+	.product-block .sort-list .right-block {
+		width: 69%;
+		display: inline-block;
+		vertical-align: middle;
+		text-align: right;
+	}
+
+	.rtl .product-block .sort-list .right-block {
+		text-align: left;
+	}
+
+	.product-block .sort-list .right-block .select-wrap {
+		float: right;
+	}
+
+	.product-block .sort-list .right-block .select-wrap {
+		display: inline-block;
+		vertical-align: middle;
+		float: none;
+	}
+
+	.product-block .sort-list .text {
+		font: 600 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.product-block .sort-list .select-wrap {
+		display: inline-block;
+		width: 215px;
+		vertical-align: middle;
+		float: none;
+	}
+
+	.product-block .pagination {
+		width: 275px;
+		margin: 0 -5px 13px;
+	}
+
+	.product-block .products-list .img-wrap {
+		width: 240px;
+		height: 240px;
+	}
+
+	.product-block .products-list .text-hold {
+		font: 400 14px/1.8 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	}
+
+	.faq-section .heading-text {
+		font: 600 20px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.faq-section .faq-list li {
+		font: 400 16px/1.7 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+		padding: 43px 55px 31px;
+		margin: 0 0 13px;
+	}
+
+	.faq-section .faq-list li:after {
+		top: 17px;
+		font-size: 40px;
+	}
+
+	.form-holder {
+		padding: 32px 0;
+	}
+
+	.form-holder h2 {
+		text-align: left;
+		font: 400 36px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		margin: 0 0 32px;
+	}
+
+	.form-holder .register-form,
+	.form-holder .login-form {
+		width: 100%;
+		max-width: 500px;
+	}
+
+	.detail-section {
+		padding: 33px 0;
+	}
+
+	.detail-section h1 {
+		margin: 0 0 34px;
+	}
+
+	.detail-section .heading-text {
+		margin: 0 0 30px;
+	}
+
+	.detail-section .checkout-form {
+		padding: 0 8px 0 28px;
+	}
+
+	.detail-section table {
+		width: 100%;
+		margin: 0;
+	}
+
+	.detail-section table thead td {
+		font: 300 13px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		letter-spacing: 1px;
+	}
+
+	.detail-section table td {
+		font: 300 12px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.detail-section table td.price {
+		font: 700 13px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		width: 47px;
+	}
+
+	.detail-section .content-wrap {
+		padding: 33px 0 17px;
+		margin: 0 0 25px;
+	}
+
+	.detail-section .image-wrap {
+		width: 100%;
+		height: auto;
+		margin: 0 0 38px;
+	}
+
+	.detail-section .checkbox-list {
+		text-align: left;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+	}
+
+	.detail-section .checkbox-list li {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.detail-section .checkbox-list .input-wrap label {
+		font: 300 12px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.detail-section .jcf-select {
+		font: 300 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.detail-section .jcf-select .jcf-select-text {
+		font: 300 14px/44px "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.detail-section .btn-default {
+		width: 212px;
+	}
+
+	.description-block h2 {
+		font-size: 36px;
+		margin: 0 0 29px;
+	}
+
+	.description-block .tab-content .img-wrap {
+		width: 280px;
+		height: 320px;
+		margin: 0 0 15px;
+	}
+
+	.description-block .nav-tabs {
+		max-width: 100%;
+	}
+
+	.description-block .nav-tabs a {
+		width: 50px;
+		height: 55px;
+	}
+
+	.description-block .size-list li {
+		padding: 11px 15px 11px 24px;
+	}
+
+	.description-block textarea {
+		font: 300 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.description-block .jcf-select {
+		font: 300 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.description-block .jcf-select .jcf-select-text {
+		font: 300 14px/44px "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.description-block .btn-default {
+		margin: 25px 0 0 50px;
+	}
+
+	.service-detail .container .content-wrap {
+		padding: 82px 0 58px;
+		max-width: 100%;
+	}
+
+	.service-detail .heading {
+		font: 900 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		margin: 0 0 24px;
+	}
+
+	.service-detail .text-wrap {
+		font: 400 16px/2.25 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+		padding: 61px 0 48px;
+	}
+
+	#header .contact-list {
+		display: inline-block;
+		vertical-align: middle;
+		width: calc(100% - 195px);
+	}
+
+	#header .contact-list li {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0 25px;
+		font: 400 13px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.link-opener {
+		display: none;
+	}
+
+	.login-wrap .log-list li {
+		padding: 0 6px;
+	}
+
+	.login-wrap .log-list li:after {
+		right: -4px;
+	}
+
+	.bottom-block {
+		padding: 7px 0 3px;
+	}
+
+	.bottom-block .logo-wrap {
+		display: inline-block;
+		vertical-align: middle;
+		width: calc(100% - 375px);
+		margin: 0;
+	}
+
+	.bottom-block .logo-wrap a {
+		width: 275px;
+	}
+
+	.rtl .bottom-block .logo-wrap a {
+		width: 275px;
+	}
+
+	.rtl .bottom-block .logo-wrap {
+		width: calc(100% - 375px);
+	}
+
+	.bottom-block .right-block {
+		text-align: right;
+		display: inline-block;
+		vertical-align: middle;
+		width: 375px;
+		padding: 12px 0 0;
+	}
+
+	.bottom-block .search-form {
+		width: 250px;
+	}
+
+	.navbar {
+		background: #4e2478;
+	}
+
+	.navbar {
+		padding: 17px 0 14px;
+	}
+
+	.navbar .nav {
+		padding: 0 10px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		width: 100%;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+
+	.navbar .nav li {
+		display: inline-block;
+		vertical-align: top;
+		float: none;
+		-webkit-box-flex: 1;
+		-ms-flex-positive: 1;
+		flex-grow: 1;
+		margin: 0;
+		font: 400 12px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.fixed-header {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		z-index: 9999;
+		background: #fff;
+	}
+
+	.fixed-header.fixed-position {
+		right: 0;
+		background: #fff;
+		z-index: 9999;
+	}
+
+	.fixed-header.fixed-position .bottom-block {
+		padding: 14px 0 8px;
+	}
+}
+
+@media (max-width: 991px) and (min-width: 600px) {
+	#footer .link-wrap {
+		width: 33.33%;
+		float: left;
+	}
+
+	.follow-hold .copyright-block {
+		width: 33.33%;
+		float: left;
+	}
+
+	.follow-hold .follow-block {
+		width: 33.33%;
+		float: left;
+	}
+}
+
+@media (min-width: 992px) {
+	.events-block .content-hold {
+		padding: 5px 10px 0;
+	}
+
+	.events-block .content-hold .image-wrap {
+		width: 80px;
+	}
+
+	.events-block .heading {
+		font: 900 24px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.events-block .btn {
+		width: 160px;
+	}
+
+	.gallery-wrap {
+		padding: 31px 0 0;
+	}
+
+	.gallery-wrap .slick-wrap {
+		margin: 0 -12px 43px;
+	}
+
+	.sales-wrap {
+		padding: 31px 0 0;
+	}
+
+	.sales-wrap .slick-wrap {
+		margin: 0 -12px 49px;
+	}
+
+	.sales-wrap .info-block {
+		margin: 0 0 58px;
+	}
+
+	.sales-wrap .info-block .text-wrap {
+		padding: 14px 5px 0 36px;
+	}
+
+	.btn {
+		font: 400 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.about-section h3 {
+		font: 900 26px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.about-section .info-section {
+		padding: 61px 0 36px;
+	}
+
+	.shopping-section .detail-wrap .title {
+		font: 400 18px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.shopping-section .detail-wrap .sub-title {
+		font: 300 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.shopping-section table th:nth-child(4) {
+		width: 13%;
+	}
+
+	.shopping-section input {
+		width: 105px;
+	}
+
+	.shopping-section dl {
+		font: 300 16px/1.5 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.product-block .filter-wrap .filter-list {
+		width: 850px;
+	}
+
+	.product-block .filter-wrap .clear-wrap {
+		width: calc(100% - 850px);
+	}
+
+	.product-block .sort-list .left-block {
+		width: 40%;
+	}
+
+	.product-block .sort-list .right-block {
+		width: 60%;
+	}
+
+	.product-block .pagination {
+		width: 345px;
+	}
+
+	.product-block .products-list .img-wrap {
+		width: 100%;
+		height: 285px;
+	}
+
+	.product-block .products-list .text-hold {
+		font: 400 17px/1.8 Lora, "Times New Roman", Times, Baskerville, Georgia, serif;
+	}
+
+	.form-holder .form-wrap {
+		padding: 0 0 0 57px;
+	}
+
+	.detail-section table thead td {
+		font: 300 15px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.detail-section table td {
+		font: 300 14px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		width: calc(100% - 80px);
+	}
+
+	.detail-section table td.price {
+		font: 700 15px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		width: 80px;
+	}
+
+	.detail-section .checkbox-list .input-wrap label {
+		font: 300 15px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.description-block .panel-group {
+		padding: 0 56px 0 0;
+	}
+
+	.description-block .panel-body {
+		padding: 15px 42px;
+	}
+
+	.description-block .tab-content .img-wrap {
+		width: 350px;
+		height: 400px;
+	}
+
+	.description-block .nav-tabs a {
+		width: 60px;
+		height: 65px;
+	}
+
+	.description-block .giftinfo-block {
+		padding: 79px 0;
+	}
+
+	.service-detail .icon-hold {
+		margin: 0 0 32px;
+	}
+
+	.service-detail .heading {
+		font: 900 18px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.service-detail .text-wrap .title-text {
+		font: 900 26px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		margin: 0 0 12px;
+	}
+
+	#header .contact-list {
+		width: calc(100% - 275px);
+	}
+
+	.login-wrap {
+		width: 275px;
+	}
+
+	.bottom-block .logo-wrap a {
+		width: auto;
+	}
+
+	.rtl .bottom-block .logo-wrap a {
+		width: auto;
+	}
+
+	.rtl .bottom-block .logo-wrap {
+		width: calc(100% - 440px);
+	}
+
+	.bottom-block .search-form {
+		width: 275px;
+	}
+
+	.navbar .nav li {
+		font: 400 15px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.links-block {
+		padding: 60px 0;
+		display: inline-block;
+		vertical-align: top;
+		width: calc(100% - 260px);
+	}
+
+	.links-block .extra-links li {
+		font: 400 15px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		margin: 0 0 10px;
+	}
+
+	.follow-hold {
+		padding: 60px 0;
+		display: inline-block;
+		vertical-align: top;
+		border: none;
+		width: 260px;
+		text-align: left;
+	}
+
+	.follow-hold .social-networks {
+		margin: 0 0 29px;
+		padding: 7px 0 0;
+	}
+
+	.follow-hold .copyright-block {
+		width: 100%;
+		margin: 0 0 40px;
+	}
+
+	.follow-hold .follow-block {
+		margin: 0 0 25px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.events-block .content-hold {
+		padding: 5px 25px 0;
+	}
+
+	.events-block .content-hold .image-wrap {
+		width: 150px;
+	}
+
+	.sales-wrap .info-block .text {
+		padding: 0 15px 0 22px;
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.sales-wrap .title-text {
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	h2 {
+		font: 900 31px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.product-block h2 {
+		font: 900 36px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		color: #3c3c3c;
+		margin: 0 0 13px;
+	}
+
+	.product-block .filter-wrap .filter-list {
+		width: 1010px;
+	}
+
+	.product-block .filter-wrap .clear-wrap {
+		width: calc(100% - 1010px);
+	}
+
+	.product-block .sort-list {
+		padding: 35px 0 20px;
+	}
+
+	.detail-section table thead td {
+		font: 300 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.detail-section table td {
+		font: 300 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.detail-section table td.price {
+		font: 700 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.detail-section .checkbox-list .input-wrap label {
+		font: 300 18px/1 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.description-block .tab-content .img-wrap {
+		width: 400px;
+		height: 450px;
+	}
+
+	.description-block .nav-tabs a {
+		width: 89px;
+		height: 99px;
+	}
+
+	#header .contact-list li {
+		padding: 0 40px 0 25px;
+	}
+
+	.bottom-block .logo-wrap {
+		width: calc(100% - 440px);
+	}
+
+	.bottom-block .right-block {
+		width: 440px;
+	}
+
+	.bottom-block .search-form {
+		width: 350px;
+	}
+
+	.bottom-block .cart-holder .cartinfo-wrap {
+		padding: 9px 0 0;
+	}
+
+	.navbar .nav {
+		padding: 0;
+	}
+
+	.navbar .nav li {
+		font: 400 18px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+}
+
+@media (max-width: 767px) {
+	.events-block [class^="col-"],
+	.events-block [class*=" col-"] {
+		margin: 0 auto 15px;
+		max-width: 350px;
+	}
+
+	.slick-prev,
+	.slick-next {
+		display: none !important;
+	}
+
+	.about-section .text-block {
+		text-align: center;
+	}
+
+	.about-section .text-wrap {
+		text-align: center;
+	}
+
+	.shopping-section table,
+	.shopping-section tbody,
+	.shopping-section tr,
+	.shopping-section td {
+		display: block;
+	}
+
+	.shopping-section thead {
+		display: none;
+	}
+
+	.shopping-section tr:nth-child(2n) td:before {
+		background: #d9f5dd;
+	}
+
+	.shopping-section td {
+		position: relative;
+		padding-left: 120px;
+		padding-top: 10px;
+		border-bottom: 1px solid #545550;
+		padding-bottom: 10px;
+	}
+
+	.shopping-section td:before {
+		content: attr(data-label);
+		position: absolute;
+		text-transform: uppercase;
+		top: 0;
+		left: 0;
+		font: 700 12px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+		background: #f3fbf4;
+		color: #545550;
+		height: 100%;
+		width: 100px;
+		padding: 10px;
+	}
+
+	.product-block .sort-list .left-block {
+		text-align: center;
+	}
+
+	.product-block .sort-list .left-block .select-wrap {
+		float: none;
+		width: 100%;
+	}
+
+	.product-block .sort-list .right-block {
+		text-align: center;
+	}
+
+	.product-block .sort-list .right-block .select-wrap {
+		float: none;
+		width: 100%;
+	}
+
+	.detail-section h1 {
+		text-align: center;
+	}
+
+	.detail-section .heading-text {
+		text-align: center;
+	}
+
+	.contact-section .btn-default {
+		margin: 0 auto;
+	}
+
+	.contact-section .contact-list {
+		padding: 0 15px;
+	}
+
+	#header .contact-list {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #000;
+		z-index: 9999;
+		padding: 10px;
+		-webkit-transform: translateX(-100%);
+		-ms-transform: translateX(-100%);
+		transform: translateX(-100%);
+		-webkit-transition: all .5s ease;
+		transition: all .5s ease;
+	}
+
+	.link-active #header .contact-list {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	#header .contact-list li a {
+		display: block;
+	}
+
+	#header .contact-list li .icon-wrap {
+		top: 8px;
+	}
+
+	#header .contact-list li .hide-xs,
+	#header .contact-list li .popup {
+		display: none;
+	}
+
+	#header address {
+		font: 300 16px/1.3 "Biryani", Arial, "Helvetica Neue", Helvetica, sans-serif;
+	}
+
+	.navbar .navbar-collapse {
+		background: #4e2478;
+	}
+
+	.navbar {
+		position: absolute;
+		top: 100%;
+		left: -10px;
+		right: -10px;
+		z-index: 999;
+		padding: 0 8px;
+	}
+
+	.fixed-header {
+		position: static !important;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		box-shadow: 0 5px 4px -5px rgba(0, 0, 0, .25);
+	}
+}
+
+@media (max-width: 549px) {
+	.product-block .products-list [class^="col-"],
+	.product-block .products-list [class*=" col-"] {
+		width: 100%;
+	}
+}
+
